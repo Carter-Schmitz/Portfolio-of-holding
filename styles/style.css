@@ -1,0 +1,116 @@
+/*Universal styles for the page */
+*{
+    box-sizing: border-box;
+    background-color: #0072bb;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+}
+
+/* Styles/spacing for the header */
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 30vw;
+    justify-content: flex-start;
+    position: relative;
+}
+
+/* Styles and orientation for ul items in the header */
+.header ul{
+    list-style-type: none;
+    display: inline-flex;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    background-color: transparent;
+}
+
+.header li{
+    margin-top: 2vw;
+    margin-right: 3vw;
+    color: aliceblue;
+    background-color: transparent;
+}
+
+/* Styles for images */
+.header img{
+    padding-left: 35vw;
+    background-color: transparent;
+    
+}
+
+/* Styles for H1 */
+h1{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    font-weight: 500;
+    color: white;
+    background-color: #0072bb;
+}
+
+a{
+    color: white;
+}
+
+.about{
+    background-color: burlywood;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p{
+    background-color: burlywood;
+}
+
+h2{
+    max-width: fit-content;
+    background-color: burlywood
+}
+
+.work{
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.card1{
+    margin-left: 10%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.card1 img{
+    max-width: 50vw;
+    max-height: 50vw;
+}
+
+.card2 img{
+    max-width: 25vw;
+    max-width: 25vw;
+}
+
+.contact{
+    display: flex;
+}
+
+@media screen and (min-width: 998px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .header ul{
+        position: absolute;
+        bottom: 0%;
+        left: 0vw;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .header ul{
+        position: absolute;
+        bottom: 5%;
+        left: 75%;
+    }
+}
