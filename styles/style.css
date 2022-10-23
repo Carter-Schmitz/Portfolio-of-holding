@@ -47,28 +47,36 @@ h1{
     background-color: rgba(240, 248, 255, 0);
 }
 
+/* Color and size for links */
 a{
     color: white;
+    font-size: x-large;
 }
 
+/* Adds background image for body */
 body{
     background-image: url("https://365psd.com/images/istock/previews/1029/102997817-geometric-modern-background-with-blue-mosaic-triangle-pattern-vector-illustration.jpg");
 }
 
+/* Gives abput me text a larger size, and a background */
 p{
-    background-color:rgb(126, 110, 207)
+    background-color:rgb(126, 110, 207);
+    font-size: xx-large;
 }
 
+/* Background-color for about class */
 .about{
-    background-color:rgb(126, 110, 207)
+    background-color:rgb(126, 110, 207);
 }
 
+/* Places header */
 h2{
     max-width: fit-content;
     background-color: rgba(107, 107, 173, 0);
     margin-top: 0%;
 }
 
+/* Arranges cards in the work class, adds a background image */
 .work{
     display: grid;
     grid-template-columns: auto auto;
@@ -79,6 +87,7 @@ h2{
     background-image: url("https://365psd.com/images/istock/previews/1029/102997817-geometric-modern-background-with-blue-mosaic-triangle-pattern-vector-illustration.jpg");
 }
 
+/* Places card1 in the center of the page, makes it larger than card2 */
 .card1{
     grid-column-start: 1;
     grid-column-end: 3;
@@ -89,14 +98,17 @@ h2{
     margin-right: auto;
 }
 
+/* adds a hover effect to card1 */
 .card1 img:hover {
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
   }
 
+  /* adds a hover effect to card2 */
 .card2 img:hover {
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
   }
 
+/* Border and spacing for card1 img */
 .card1 img{
     border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
@@ -107,6 +119,7 @@ h2{
     border-radius: 10px;
 }
 
+/* card2 spacing and size */
 .card2{
     width: 50%;
     height: 75%;
@@ -116,6 +129,7 @@ h2{
     margin-right: auto;
 }
 
+/* Border and spacing for card2 img */
 .card2 img{
     margin-left: auto;
     margin-right: auto;
@@ -127,10 +141,12 @@ h2{
     border-radius: 10px;
 }
 
+/* increase contact section font size */
 .contact{
     font-size: xx-large;
 }
 
+/* Places li in a horizontal line, increases font size */
 .contact li{
     list-style-type: none;
     display: inline-flex;
@@ -139,10 +155,12 @@ h2{
     font-size: xx-large;
 }
 
+/* Gives a background to the ul */
 .contact ul{
     background-color:  rgb(107, 107, 173);
 }
 
+/* Places h3, gives translucent background */
 h3{
     text-align: center;
     margin-top: 0;
@@ -150,15 +168,8 @@ h3{
     background-color: rgba(240, 248, 255, 0);
 }
 
-h4{
-    margin: 0%;
-    box-sizing: content-box;
-}
-
-
+/* Sets viewport changes above 998px */
 @media screen and (min-width: 998px){
-    body{
-    }
     .header ul{
         position: absolute;
         bottom: 0%;
@@ -166,6 +177,7 @@ h4{
     }
 }
 
+/* Sets viewport changes below 998px */
 @media screen and (max-width: 998px) {
     .header ul{
         position: absolute;
@@ -180,7 +192,8 @@ h4{
         margin-right: -1.5rem;
     }
     .card1{
-        max-width: 75vw;
+        width: 75vw;
+        height: 50vw;
     }
     .card2{
         max-width: 45vw;
